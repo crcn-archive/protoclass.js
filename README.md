@@ -63,14 +63,14 @@ Vehicle.extend(Car, {
 });
 ```
 
-### fn.extend(subclass[, mixins])
+#### fn.extend(subclass[, mixins])
 
 extends the class
 
-### fn.mixin(mixins)
+#### fn.mixin(mixins)
 
 copies the the mixins over to the prototype
 
-### fn.create(...args)
+#### fn.create(...args)
 
 creates the class with the arguments
