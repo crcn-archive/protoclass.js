@@ -61,6 +61,16 @@ describe("basic#", function() {
     expect(Cat.__super__).to.be(Animal.prototype);
   });
 
+  it("can create a new object without using the new keyword", function () {
+    function Animal (name) {
+      this.name = name;
+    }
+
+    structr(Animal);
+
+    expect(Animal.create("abba").name).to.be("abba");
+  });
+
 
   it("can call super on a parent class", function() {
 
